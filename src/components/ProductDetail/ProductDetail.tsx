@@ -1,12 +1,13 @@
-"use client";
 import { ProductImage } from "./ProductImage";
 import { ProductInfo } from "./ProductInfo";
 import { RelatedProducts } from "./RelatedProducts";
 import { Footer } from "./Footer";
+import Navigation from "@components/Navigation";
 
 export default function ProductDetail() {
 	return (
 		<>
+			<Navigation />
 			<link
 				href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
 				rel="stylesheet"

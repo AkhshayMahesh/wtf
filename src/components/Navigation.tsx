@@ -1,24 +1,59 @@
-export const Navigation = () => {
+"use client";
+import { useState } from "react";
+import MobileMenu from "./MobileMenu";
+
+export default function Navigation() {
+	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
 	return (
-		<nav className="flex w-full flex-wrap justify-between gap-5 overflow-hidden bg-white px-20 py-14 font-inter font-medium
- max-md:max-w-full max-md:px-5">
-			<h1 className="my-auto text-3xl text-black">FreshHarvest</h1>
-			<div className="flex items-center gap-10 text-xl text-black max-md:max-w-full">
-				<div className="my-auto flex min-w-60 items-center gap-10 self-stretch max-md:max-w-full">
-					<a href="#" className="my-auto self-stretch">
-						Home
-					</a>
-					<a href="#" className="my-auto self-stretch">
-						About Us
-					</a>
-					<a href="#" className="my-auto self-stretch">
-						Shop
-					</a>
-					<button className="my-auto gap-2 self-stretch whitespace-nowrap rounded-lg bg-black px-6 py-3.5 text-base text-white shadow-sm max-md:px-5">
-						Login
-					</button>
-				</div>
-			</div>
-		</nav>
+		<header className="flex w-full flex-wrap items-start justify-between gap-5 overflow-hidden bg-white px-5 py-8 font-medium sm:px-20 sm:py-14">
+			<h1 className="self-end text-2xl text-black sm:text-3xl">
+				FreshHarvest
+			</h1>
+
+			{/* Desktop Navigation */}
+			<nav className="hidden items-center gap-10 self-start text-xl text-black md:flex">
+				<a
+					href="#about"
+					className="my-auto self-stretch hover:text-gray-600"
+				>
+					About Us
+				</a>
+				<a
+					href="#shop"
+					className="my-auto self-stretch hover:text-gray-600"
+				>
+					Shop
+				</a>
+				<button className="my-auto gap-2 self-stretch whitespace-nowrap rounded-lg bg-black px-6 py-3.5 text-base text-white shadow-sm hover:bg-gray-800">
+					Login
+				</button>
+			</nav>
+
+			{/* Mobile Menu Button */}
+			<button
+				className="p-2 text-black md:hidden"
+				onClick={() => setIsMobileMenuOpen(true)}
+				aria-label="Open menu"
+			>
+				<svg
+					className="h-6 w-6"
+					fill="none"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					strokeWidth="2"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path d="M4 6h16M4 12h16M4 18h16"></path>
+				</svg>
+			</button>
+
+			{/* Mobile Menu */}
+			<MobileMenu
+				isOpen={isMobileMenuOpen}
+				onClose={() => setIsMobileMenuOpen(false)}
+			/>
+		</header>
 	);
-};
+}

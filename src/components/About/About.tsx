@@ -1,10 +1,12 @@
 "use client";
 import { AboutHeader } from "./AboutHeader";
 import { ContactForm } from "./ContactForm";
+import Navigation from "@components/Navigation";
 
 function About() {
 	return (
 		<main className="overflow-hidden bg-white px-6 py-16 sm:px-20 sm:py-80">
+			<Navigation />
 			<section className="mx-auto w-full max-w-7xl">
 				<div className="flex flex-col gap-8 sm:flex-row sm:gap-5">
 					<div className="w-[55%] max-md:ml-0 max-md:w-full">
