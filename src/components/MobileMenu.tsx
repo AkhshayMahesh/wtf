@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { navMenuItemMap } from "./NavMenuItems";
 
 interface MobileMenuProps {
 	isOpen: boolean;
@@ -6,6 +7,21 @@ interface MobileMenuProps {
 }
 
 export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
+	const [currentPage, setCurrentPage] = useState("default");
+
+	useEffect(() => {
+		const path = window.location.pathname;
+		if (path === "/") setCurrentPage("home");
+		const pageMap: { [key: string]: string } = {
+			"/": "home",
+			"/about": "about",
+			"/shop": "shop",
+			"/productDetail": "productdetail",
+			"/article": "article",
+		};
+		setCurrentPage(pageMap[path] || "default");
+	}, []);
+
 	useEffect(() => {
 		if (isOpen) {
 			document.body.style.overflow = "hidden";
@@ -36,18 +52,15 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 					×
 				</button>
 				<nav className="mt-12 flex flex-col gap-6">
-					<a
-						href="#about"
-						className="text-xl text-black hover:text-gray-600"
-					>
-						About Us
-					</a>
-					<a
-						href="#shop"
-						className="text-xl text-black hover:text-gray-600"
-					>
-						Shop
-					</a>
+					{navMenuItemMap[currentPage].map((item, index) => (
+						<a
+							key={index}
+							href={item.url}
+							className="text-xl text-black hover:text-gray-600"
+						>
+							{item.name}
+						</a>
+					))}
 					<button className="w-full rounded-lg bg-black px-6 py-3.5 text-base text-white shadow-sm hover:bg-gray-800">
 						Login
 					</button>
