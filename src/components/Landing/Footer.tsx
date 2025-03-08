@@ -2,10 +2,10 @@ export default function Footer() {
 	return (
 		<footer className="w-full bg-white px-5 pb-12 sm:px-20">
 			<hr className="h-px border-t border-neutral-200" />
-			<div className="mt-12 flex flex-col gap-10 lg:flex-row">
+			<div className="mt-12 flex flex-col lg:gap-96 gap-8 lg:flex-row w-full">
 				<div className="flex flex-col">
 					<h2 className="text-2xl text-black">FreshHarvest</h2>
-					<div className="mt-8 flex gap-4 sm:mt-14">
+					<div className="lg:mt-6 flex gap-4 max-md:mt-5">
 						<img
 							src="https://cdn.builder.io/api/v1/image/assets/TEMP/199c9a3c64fa87237dabe74b1aff1fe617935141f37a07ba364b7012e90e628c?placeholderIfAbsent=true&apiKey=9570ebf0bdf745e9829d9755060a264b"
 							alt="Social icon"

@@ -1,6 +1,6 @@
 export default function Benefits() {
 	return (
-		<section className="mt-20 w-full px-5 sm:mt-44 sm:px-0">
+		<section className="mt-20 w-full px-5 sm:mt-44 sm:px-1">
 			<div className="flex flex-col gap-8 lg:flex-row lg:gap-5">
 				<div className="w-full lg:w-[42%]">
 					<div className="flex w-full flex-col items-start text-xl sm:text-2xl">

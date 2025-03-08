@@ -2,7 +2,7 @@ import ChooseUsCard from "./ChooseUsCard";
 
 export default function ChooseUs() {
 	return (
-		<section className="w-full sm:px-0">
+		<section className="w-full sm:px-1">
 			<h2 className="mt-20 text-3xl font-semibold tracking-tighter text-black sm:mt-36 sm:text-5xl">
 				Why Choose Us?
 			</h2>

@@ -21,7 +21,7 @@ export default function Navigation() {
 	}, []);
 
 	return (
-		<header className="flex w-full flex-wrap items-start justify-between gap-5 overflow-hidden bg-white px-5 py-8 font-medium sm:px-20 sm:py-14">
+		<header className="flex w-full flex-wrap items-start justify-between gap-5 overflow-hidden bg-white lg:px-20 lg:py-8 font-medium max-md:px-5 max-md:py-6">
 			<h1 className="self-end text-2xl text-black sm:text-3xl">
 				FreshHarvest
 			</h1>
