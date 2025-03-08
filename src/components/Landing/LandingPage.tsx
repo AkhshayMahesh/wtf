@@ -6,6 +6,7 @@ import Benefits from "./Benefits";
 import Testimonials from "./Testimonials";
 import CallToAction from "./CallToAction";
 import Footer from "./Footer";
+import ChooseUs from "./ChooseUs";
 
 function LandingPage() {
 	return (
@@ -15,6 +16,7 @@ function LandingPage() {
 				<Hero />
 				<Features />
 				<Benefits />
+				<ChooseUs />
 				<Testimonials />
 			</div>
 			<CallToAction />
