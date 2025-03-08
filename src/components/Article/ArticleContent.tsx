@@ -33,7 +33,7 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({
 						key={index}
 						src={image}
 						alt={`Article image ${index + 1}`}
-						className="aspect-[1.43] w-[624px] min-w-60 rounded-lg object-contain max-md:max-w-full"
+						className="aspect-[1.43] w-[40vw] min-w-60 rounded-lg object-contain max-md:max-w-full"
 					/>
 				))}
 			</div>

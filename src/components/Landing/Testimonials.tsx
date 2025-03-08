@@ -2,7 +2,7 @@ import TestimonialCard from "./TestimonialCard";
 
 export default function Testimonials() {
 	return (
-		<section className="w-full">
+		<section className="w-full pr-20">
 			<h2 className="mt-44 text-5xl font-semibold tracking-tighter text-black max-md:mt-10 max-md:max-w-full max-md:text-4xl">
 				What Our Customers Say
 			</h2>

@@ -2,6 +2,7 @@ import Navigation from "../Navigation";
 import { ArticleHeader } from "./ArticleHeader";
 import { ArticleContent } from "./ArticleContent";
 import { RelatedArticles } from "./RelatedArticle";
+import Footer from "@components/Landing/Footer";
 
 const Article = () => {
 	const articleContent = [
@@ -31,9 +32,9 @@ const Article = () => {
 	];
 
 	return (
-		<div className="overflow-hidden bg-white pb-96 max-md:pb-24">
+		<div className="overflow-hidden bg-white">
 			<Navigation />
-			<main className="mt-20 flex w-full flex-col px-20 max-md:mt-10 max-md:max-w-full max-md:px-5">
+			<main className="mt-20 flex w-full flex-col px-20 max-md:mt-10 max-md:max-w-full max-md:px-5 mb-[20vh]">
 				<ArticleHeader
 					title="The Secret to Eating Healthy & Fresh"
 					subtitle="Learn how organic food benefits your health and the environment."
@@ -48,6 +49,7 @@ const Article = () => {
 				/>
 				<RelatedArticles articles={relatedArticles} />
 			</main>
+			<Footer />
 		</div>
 	);
 };
