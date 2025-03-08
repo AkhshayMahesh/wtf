@@ -14,14 +14,14 @@ export default function Navigation() {
 			"/": "home",
 			"/about": "about",
 			"/shop": "shop",
-			"/productDetail": "productdetail",
+			"/product-detail": "productdetail",
 			"/article": "article",
 		};
 		setCurrentPage(pageMap[path] || "default");
 	}, []);
 
 	return (
-		<header className="flex w-full flex-wrap items-start justify-between gap-5 overflow-hidden bg-white lg:px-20 lg:py-8 font-medium max-lg:px-5 max-lg:py-6">
+		<header className="flex w-full flex-wrap items-start justify-between gap-5 overflow-hidden bg-white font-medium max-lg:px-5 max-lg:py-6 lg:px-20 lg:py-8">
 			<h1 className="self-end text-2xl text-black sm:text-3xl">
 				FreshHarvest
 			</h1>
@@ -37,7 +37,10 @@ export default function Navigation() {
 						{item.name}
 					</a>
 				))}
-				<button className="my-auto gap-2 self-stretch whitespace-nowrap rounded-lg bg-black px-6 py-3.5 text-base text-white shadow-sm hover:bg-gray-800">
+				<button
+					className="my-auto gap-2 self-stretch whitespace-nowrap rounded-lg bg-black px-6 py-3.5 text-base text-white shadow-sm hover:bg-gray-800"
+					onClick={() => (window.location.href = "/login")}
+				>
 					Login
 				</button>
 			</nav>

@@ -26,7 +26,7 @@ export const publicRoutes: RouteObject[] = [
 		element: <Article />,
 	},
 	{
-		path: "/productDetail",
+		path: "/product-detail",
 		element: <ProductDetail />,
 	},
 	{

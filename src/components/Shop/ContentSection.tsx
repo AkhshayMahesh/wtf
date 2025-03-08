@@ -20,7 +20,10 @@ export default function ContentSection({
 				{description}
 			</p>
 			<div className="mt-6">
-				<button className="rounded-lg bg-neutral-200 px-6 py-3 text-lg font-medium shadow-sm transition-colors hover:bg-neutral-300">
+				<button
+					className="rounded-lg bg-neutral-200 px-6 py-3 text-lg font-medium shadow-sm transition-colors hover:bg-neutral-300"
+					onClick={() => (window.location.href = "/product-detail")}
+				>
 					Learn More
 				</button>
 			</div>
@@ -36,7 +39,7 @@ export default function ContentSection({
 	);
 
 	return (
-		<div className="font-inter mb-20 max-md:mb-12">
+		<div className="mb-20 font-inter max-md:mb-12">
 			<div className="flex gap-8 max-md:flex-col max-md:gap-6">
 				{imagePosition === "left" ? (
 					<>

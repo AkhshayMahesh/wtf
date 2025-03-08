@@ -9,10 +9,18 @@ export default function CallToAction() {
 				</div>
 				<div className="w-full lg:w-[32%]">
 					<div className="flex flex-col gap-4 text-xl font-medium sm:flex-row sm:gap-6 sm:text-2xl">
-						<button className="w-full rounded-lg bg-black px-6 py-4 text-white shadow-sm hover:bg-gray-800 sm:w-auto sm:px-8 sm:py-5">
+						<button
+							className="w-full rounded-lg bg-black px-6 py-4 text-white shadow-sm hover:bg-gray-800 sm:w-auto sm:px-8 sm:py-5"
+							onClick={() => (window.location.href = "/shop")}
+						>
 							Shop
 						</button>
-						<button className="w-full rounded-lg bg-neutral-200 px-6 py-4 text-black shadow-sm hover:bg-neutral-300 sm:w-auto sm:px-8 sm:py-5">
+						<button
+							className="w-full rounded-lg bg-neutral-200 px-6 py-4 text-black shadow-sm hover:bg-neutral-300 sm:w-auto sm:px-8 sm:py-5"
+							onClick={() =>
+								(window.location.href = "/product-detaill")
+							}
+						>
 							Learn More
 						</button>
 					</div>

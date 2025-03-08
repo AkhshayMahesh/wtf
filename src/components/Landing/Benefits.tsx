@@ -37,10 +37,18 @@ export default function Benefits() {
 							</article>
 						</div>
 						<div className="mt-12 flex w-full flex-col gap-4 sm:mt-20 sm:w-auto sm:flex-row">
-							<button className="w-full rounded-lg bg-black px-6 py-3 text-white shadow-sm hover:bg-gray-800 sm:w-auto">
+							<button
+								className="w-full rounded-lg bg-black px-6 py-3 text-white shadow-sm hover:bg-gray-800 sm:w-auto"
+								onClick={() => (window.location.href = "/shop")}
+							>
 								Shop Now
 							</button>
-							<button className="w-full rounded-lg bg-neutral-200 px-6 py-3 text-black shadow-sm hover:bg-neutral-300 sm:w-auto">
+							<button
+								className="w-full rounded-lg bg-neutral-200 px-6 py-3 text-black shadow-sm hover:bg-neutral-300 sm:w-auto"
+								onClick={() =>
+									(window.location.href = "/product-detail")
+								}
+							>
 								Learn More
 							</button>
 						</div>

@@ -16,7 +16,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 			"/": "home",
 			"/about": "about",
 			"/shop": "shop",
-			"/productDetail": "productdetail",
+			"/product-detail": "productdetail",
 			"/article": "article",
 		};
 		setCurrentPage(pageMap[path] || "default");
@@ -61,7 +61,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 							{item.name}
 						</a>
 					))}
-					<button className="w-full rounded-lg bg-black px-6 py-3.5 text-base text-white shadow-sm hover:bg-gray-800">
+					<button
+						className="w-full rounded-lg bg-black px-6 py-3.5 text-base text-white shadow-sm hover:bg-gray-800"
+						onClick={() => (window.location.href = "/login")}
+					>
 						Login
 					</button>
 				</nav>

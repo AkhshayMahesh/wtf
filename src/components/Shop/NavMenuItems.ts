@@ -12,7 +12,7 @@ export const navMenuItemMap: NavMenuItemMap = {
 		{ name: "Home", url: "/" },
 		{ name: "About Us", url: "/about" },
 		{ name: "Shop", url: "/shop" },
-		{ name: "Learn More", url: "/productDetail" },
+		{ name: "Learn More", url: "/product-detail" },
 	],
 	home: [
 		{ name: "About Us", url: "/about" },
@@ -25,7 +25,7 @@ export const navMenuItemMap: NavMenuItemMap = {
 	shop: [
 		{ name: "Home", url: "/" },
 		{ name: "About Us", url: "/about" },
-		{ name: "Learn More", url: "/productDetail" },
+		{ name: "Learn More", url: "/product-detail" },
 	],
 	article: [
 		{ name: "Home", url: "/" },
