@@ -1,6 +1,7 @@
 import Article from "@components/Article/Article";
 import About from "@pages/About";
 import Home from "@pages/Home";
+import LoginPage from "@pages/Login";
 import NotFound from "@pages/NotFound";
 import { RouteObject } from "react-router-dom";
 
@@ -13,6 +14,10 @@ export const publicRoutes: RouteObject[] = [
 	{
 		path: "/about",
 		element: <About />,
+	},
+	{
+		path: "/login",
+		element: <LoginPage />,
 	},
 	{
 		path: "/article",
