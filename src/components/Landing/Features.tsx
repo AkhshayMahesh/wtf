@@ -2,7 +2,7 @@ import FeatureCard from "./FeatureCard";
 
 export default function Features() {
 	return (
-		<section className="w-full lg:pr-20 sm:px-1 ">
+		<section className="w-full lg:pr-20 pr-5 sm:px-1 ">
 			<h2 className="mt-20 text-3xl font-semibold tracking-tighter text-black sm:mt-36 sm:text-5xl">
 				Discover Freshness in Every Bite
 			</h2>

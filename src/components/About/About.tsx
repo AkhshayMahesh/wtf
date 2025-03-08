@@ -7,7 +7,7 @@ function About() {
 	return (
 		<main className="h-screen w-screen bg-white">
 			<Navigation />
-			<section className="h-full w-full px-6 sm:px-24">
+			<section className="h-full w-full px-6 sm:px-24 lg:mt-20 mt-5">
 				<div className="flex h-full w-full flex-col justify-evenly md:flex-row md:gap-5">
 					<div className="w-[50%] max-lg:ml-0 max-lg:w-full">
 						<div className="pb-5 max-lg:mt-10 max-lg:max-w-full">
