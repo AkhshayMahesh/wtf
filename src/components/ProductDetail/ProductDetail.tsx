@@ -8,8 +8,8 @@ export default function ProductDetail() {
 	return (
 		<>
 			<Navigation />
-			<main className="mx-auto my-0 w-full max-w-[1440px] bg-white">
-				<section className="font-inter mb-20 flex gap-36 px-20 pb-1 max-md:flex-col max-md:gap-10 max-md:px-6 max-md:pb-0 max-md:pt-16 max-sm:gap-8 max-sm:px-4 max-sm:pt-8">
+			<main className="mx-auto my-0 w-full bg-white">
+				<section className="mb-20 flex w-full px-20 pb-1 pt-16 font-inter max-lg:flex-col max-md:gap-5 max-md:px-6 max-md:pb-0 max-sm:gap-8 max-sm:px-4 max-sm:pt-8 md:gap-10 xl:gap-36">
 					<ProductImage
 						image="https://cdn.builder.io/api/v1/image/assets/TEMP/314ee57e3fca2d7eaafc435b2da54b0ce49d9ff4"
 						altText="Organic Gourmet Mushroom"
