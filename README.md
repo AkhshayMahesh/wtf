@@ -1,6 +1,4 @@
-# Festember '24 Frontend
-
-The official frontend codebase of Festember '24 Main Website!
+# What the Figma Frontend
 
 ### Setup
 
@@ -28,13 +26,7 @@ corepack enable pnpm
 pnpm install
 ```
 
-5. Install API clients
-
-```bash
-(cd fest-web-client/client && npm install)
-```
-
-6. Run the development server
+5. Run the development server
 
 ```bash
 pnpm dev
@@ -45,9 +37,6 @@ _The website will be up and running on http://localhost:3000_
 ### Notes
 
 -   `pnpm format` can be used to format the code using [prettier](https://prettier.io/docs/en/).
--   `fest-web-client` is a submodule that contains `client` folder which provides auto-generated classes for integrating with FestAPIv2.
--   Docs for submodule concept - [Git Tools - Submodules](https://www.git-scm.com/book/en/v2/Git-Tools-Submodules).
--   If you forgot to use `--recurse-submodules` option during git clone, run `git submodule update --init`.
 
 ### Development Tools Utilized
 
