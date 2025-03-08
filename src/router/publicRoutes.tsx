@@ -1,3 +1,4 @@
+import Article from "@components/Article/Article";
 import About from "@pages/About";
 import Home from "@pages/Home";
 import NotFound from "@pages/NotFound";
@@ -13,4 +14,8 @@ export const publicRoutes: RouteObject[] = [
 		path: "/about",
 		element: <About />,
 	},
+	{
+		path: "/article",
+		element: <Article />,
+	}
 ];

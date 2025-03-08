@@ -1,6 +1,7 @@
 export const Navigation = () => {
 	return (
-		<nav className="flex w-full flex-wrap justify-between gap-5 overflow-hidden bg-white px-20 py-14 font-medium max-md:max-w-full max-md:px-5">
+		<nav className="flex w-full flex-wrap justify-between gap-5 overflow-hidden bg-white px-20 py-14 font-inter font-medium
+ max-md:max-w-full max-md:px-5">
 			<h1 className="my-auto text-3xl text-black">FreshHarvest</h1>
 			<div className="flex items-center gap-10 text-xl text-black max-md:max-w-full">
 				<div className="my-auto flex min-w-60 items-center gap-10 self-stretch max-md:max-w-full">

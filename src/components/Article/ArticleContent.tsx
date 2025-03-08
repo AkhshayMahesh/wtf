@@ -18,7 +18,7 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({
 				alt="Article main image"
 				className="mt-6 aspect-[1.97] w-full rounded-lg object-contain max-md:max-w-full"
 			/>
-			<p className="mt-14 w-[842px] self-center text-xl font-medium leading-8 text-black max-md:mt-10 max-md:max-w-full">
+			<p className="mt-14 w-[842px] self-center text-xl font-inter font-medium leading-8 text-black max-md:mt-10 max-md:max-w-full">
 				{content.map((paragraph, index) => (
 					<React.Fragment key={index}>
 						{paragraph}
