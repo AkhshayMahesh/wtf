@@ -7,12 +7,12 @@ export function ImageSection() {
 			<img
 				src={loginSideImage}
 				alt="Background"
-				className="absolute inset-0 size-full object-cover max-lg:hidden"
+				className="absolute inset-0 size-full object-cover max-xl:hidden"
 			/>
 			<img
 				src={loginTopImage}
 				alt="Background"
-				className="absolute inset-0 hidden size-full object-cover max-lg:block"
+				className="absolute inset-0 hidden size-full object-cover max-xl:block"
 			/>
 		</div>
 	);

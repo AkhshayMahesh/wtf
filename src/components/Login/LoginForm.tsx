@@ -19,7 +19,7 @@ export function LoginForm({ isLogin }: LoginFormProps) {
 	};
 
 	return (
-		<div className="mr-0 flex h-full flex-col justify-center bg-white px-32 py-64 tracking-normal max-lg:max-w-full max-lg:px-[5%] max-lg:py-24">
+		<div className="mr-0 flex h-full flex-col justify-center bg-white px-32 py-64 tracking-normal max-xl:px-[5%] max-xl:py-24 max-lg:max-w-full">
 			<h1 className="self-start text-center text-3xl font-semibold text-gray-900">
 				{isLoginPage ? "Log In" : "Sign Up"}
 			</h1>
