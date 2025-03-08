@@ -12,7 +12,7 @@ export const SubmitButton: React.FC<SubmitButtonProps> = ({
 	return (
 		<button
 			onClick={onClick}
-			className={`w-full shrink basis-0 gap-2 self-stretch whitespace-nowrap rounded-lg bg-black px-5 py-3 text-lg text-white shadow-sm sm:flex-1 sm:px-8 sm:py-4 sm:text-xl ${className}`}
+			className={`w-full shrink gap-2 self-stretch whitespace-nowrap rounded-lg bg-black px-5 py-3 text-lg text-white shadow-sm sm:flex-1 sm:px-8 sm:py-4 sm:text-xl ${className}`}
 		>
 			Submit
 		</button>
