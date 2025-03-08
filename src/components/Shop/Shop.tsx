@@ -3,10 +3,12 @@ import HeroSection from "./HeroSection";
 import ContentSection from "./ContentSection";
 import ProductShowcase from "./ProductShowcase";
 import FeatureList from "./FeatureList";
+import Footer from "@components/Landing/Footer";
 
 function Shop() {
 	return (
-		<main className="overflow-hidden bg-white pb-96 max-md:pb-24">
+		<>
+		<main className="font-inter overflow-hidden bg-white mb-40">
 			<HeroSection />
 			<section className="mt-32 flex w-full flex-col px-20 max-md:mt-10 max-md:max-w-full max-md:px-5">
 				<ContentSection
@@ -27,6 +29,8 @@ function Shop() {
 				<FeatureList />
 			</section>
 		</main>
+		<Footer />
+		</>
 	);
 }
 

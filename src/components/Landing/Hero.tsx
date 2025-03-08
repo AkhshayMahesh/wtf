@@ -1,6 +1,6 @@
 export default function Hero() {
 	return (
-		<section className="w-full px-4 sm:px-6 lg:pr-20 pr-5 mx-auto">
+		<section className="w-full px-4 sm:px-6 lg:pr-20 max-md:max-md:pr-5 mx-auto">
 			<div className="w-full">
 				<h2 className="text-4xl font-bold tracking-tighter text-black sm:text-6xl">
 					Fresh & Organic Food Delivered to Your Doorstep

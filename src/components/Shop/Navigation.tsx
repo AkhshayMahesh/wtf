@@ -21,13 +21,13 @@ export default function Navigation() {
 	}, []);
 
 	return (
-		<header className="flex w-full flex-wrap items-start justify-between gap-5 overflow-hidden bg-white lg:px-20 lg:py-8 font-medium max-lg:px-5 max-lg:py-6">
-			<h1 className="self-end text-2xl text-black sm:text-3xl">
+		<header className="z-20 flex w-full flex-wrap items-start justify-between gap-5 overflow-hidden lg:px-20 lg:py-8 font-medium max-lg:px-5 max-lg:py-6">
+			<h1 className="self-end text-2xl text-white sm:text-3xl">
 				FreshHarvest
 			</h1>
 
 			{/* Desktop Navigation */}
-			<nav className="hidden items-center gap-10 self-start text-xl text-black md:flex">
+			<nav className="hidden items-center gap-10 self-start text-xl text-white md:flex">
 				{navMenuItemMap[currentPage].map((item, index) => (
 					<a
 						key={index}
@@ -37,14 +37,14 @@ export default function Navigation() {
 						{item.name}
 					</a>
 				))}
-				<button className="my-auto gap-2 self-stretch whitespace-nowrap rounded-lg bg-black px-6 py-3.5 text-base text-white shadow-sm hover:bg-gray-800">
+				<button className="my-auto gap-2 self-stretch whitespace-nowrap rounded-lg border-2 inset-2 border-white px-6 py-3.5 text-base text-white shadow-sm hover:bg-gray-800">
 					Login
 				</button>
 			</nav>
 
 			{/* Mobile Menu Button */}
 			<button
-				className="p-2 text-black md:hidden"
+				className="p-2 text-white md:hidden"
 				onClick={() => setIsMobileMenuOpen(true)}
 				aria-label="Open menu"
 			>

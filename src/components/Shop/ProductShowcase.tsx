@@ -18,7 +18,7 @@ export default function ProductShowcase() {
 						/>
 					</div>
 					<div className="col-span-5 max-md:col-span-full">
-						<div className="flex h-full flex-col justify-between gap-8 max-md:gap-6">
+						<div className="flex h-full flex-col justify-between gap-6 max-md:gap-6">
 							<ProductCard
 								imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/fa96e7c24ebb3f2881fc8560f8551fb493ecc0d3daafc494543c2ce5bf7f20a3?placeholderIfAbsent=true&apiKey=9570ebf0bdf745e9829d9755060a264b"
 								title="Fruits"

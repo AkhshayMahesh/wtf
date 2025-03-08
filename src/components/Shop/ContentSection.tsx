@@ -36,17 +36,17 @@ export default function ContentSection({
 	);
 
 	return (
-		<div className="mb-20 max-md:mb-12">
+		<div className="font-inter mb-20 max-md:mb-12">
 			<div className="flex gap-8 max-md:flex-col max-md:gap-6">
 				{imagePosition === "left" ? (
 					<>
-						<div className="w-[55%] max-md:w-full">{image}</div>
-						<div className="w-[45%] max-md:w-full">{content}</div>
+						<div className="w-[52%] max-md:w-full">{image}</div>
+						<div className="w-[50%] max-md:w-full">{content}</div>
 					</>
 				) : (
 					<>
-						<div className="w-[45%] max-md:w-full">{content}</div>
-						<div className="w-[55%] max-md:w-full">{image}</div>
+						<div className="w-[50%] max-md:w-full">{content}</div>
+						<div className="w-[52%] max-md:w-full">{image}</div>
 					</>
 				)}
 			</div>
