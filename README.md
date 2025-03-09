@@ -1,6 +1,10 @@
 # What the Figma Frontend  
 ## Team Aladeen
 
+_The website is hosted at https://wtf-tau.vercel.app/_
+
+_Find the demo here at https://drive.google.com/drive/folders/1_0e5e_bAZS_0961G7n7qyLn7HPI23jFp_
+
 ### Setup
 
 1. Fork this repo and clone your fork
