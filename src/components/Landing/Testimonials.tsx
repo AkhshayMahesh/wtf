@@ -3,7 +3,7 @@ import TestimonialCard from "./TestimonialCard";
 export default function Testimonials() {
 	return (
 		<section className="w-full max-md:pr-5 lg:pr-20">
-			<h2 className="mt-44 text-5xl font-semibold tracking-tighter text-black max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+			<h2 className="max-lg:mt-44 text-5xl font-semibold tracking-tighter text-black max-md:mt-10 max-md:max-w-full max-md:text-4xl">
 				What Our Customers Say
 			</h2>
 			<div className="mt-12 flex flex-wrap gap-8 font-medium max-md:mt-10">

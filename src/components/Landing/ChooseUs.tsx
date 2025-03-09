@@ -1,8 +1,8 @@
 export default function ChooseUs() {
 	return (
-		<div className="min-h-screen bg-white">
+		<div className="font-inter min-h-screen bg-white">
 			<section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-				<h2 className="mb-16 text-left text-4xl font-bold sm:text-5xl">
+				<h2 className="mb-16 text-left text-4xl font-semibold sm:text-5xl">
 					Why Choose Us?
 				</h2>
 
