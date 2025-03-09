@@ -1,6 +1,9 @@
+import card1 from "../../assets/card1.svg";
+import card2 from "../../assets/card2.svg";
+
 export default function ChooseUs() {
 	return (
-		<div className="font-inter min-h-screen bg-white">
+		<div className="min-h-screen bg-white font-inter">
 			<section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
 				<h2 className="mb-16 text-left text-4xl font-semibold sm:text-5xl">
 					Why Choose Us?
@@ -9,10 +12,10 @@ export default function ChooseUs() {
 				<div className="grid grid-cols-1 gap-12 md:grid-cols-2">
 					{/* First Feature */}
 					<div className="space-y-6">
-						<div className="aspect-[4/3] overflow-hidden rounded-lg bg-gray-100">
+						<div className="aspect-[4/3] overflow-hidden rounded-lg">
 							{/* Image placeholder */}
-							<div className="flex h-full w-full items-center justify-center text-gray-400">
-								Image 1
+							<div className="flex h-full w-full items-center justify-center object-cover text-gray-400">
+								<img src={card1} alt="card1" />
 							</div>
 						</div>
 						<div>
@@ -28,10 +31,10 @@ export default function ChooseUs() {
 
 					{/* Second Feature */}
 					<div className="space-y-6">
-						<div className="aspect-[4/3] overflow-hidden rounded-lg bg-gray-100">
+						<div className="aspect-[4/3] overflow-hidden rounded-lg">
 							{/* Image placeholder */}
 							<div className="flex h-full w-full items-center justify-center text-gray-400">
-								Image 2
+								<img src={card2} alt="card2" />
 							</div>
 						</div>
 						<div>
