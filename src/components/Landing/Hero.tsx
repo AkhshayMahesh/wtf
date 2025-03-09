@@ -2,12 +2,12 @@ export default function Hero() {
 	return (
 		<section className="font-inter mx-auto w-full px-4 max-md:max-md:pr-5 sm:px-6 lg:pr-20">
 			<div className="w-full">
-				<h2 className="text-4xl font-bold tracking-tight text-black sm:text-6xl lg:w-[50vw]">
-					Fresh & Organic Food Delivered to Your Doorstep
+				<h2 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">
+					Fresh & Organic Food <br/> Delivered to Your Doorstep
 				</h2>
-				<p className="mt-4 text-xl leading-8 text-black sm:mt-6 sm:text-2xl sm:leading-9 lg:w-[50vw]">
+				<p className="mt-4 text-xl leading-8 text-black sm:mt-6 sm:text-2xl sm:leading-9">
 					Your one-stop destination for farm-fresh produce, exotic
-					fruits, and high-quality organic food.
+					fruits, and high-<br/>quality organic food.
 				</p>
 			</div>
 			<button
