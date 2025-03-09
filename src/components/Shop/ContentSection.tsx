@@ -1,3 +1,5 @@
+import TiltCard from "@components/TiltCard/TiltCard";
+
 interface ContentSectionProps {
 	title: string;
 	description: string;
@@ -45,13 +47,17 @@ export default function ContentSection({
 			<div className="flex gap-8 max-md:flex-col max-md:gap-6">
 				{imagePosition === "left" ? (
 					<>
-						<div className="w-[52%] max-md:w-full">{image}</div>
+						<div className="w-[52%] max-md:w-full">
+							<TiltCard>{image}</TiltCard>
+						</div>
 						<div className="w-[50%] max-md:w-full">{content}</div>
 					</>
 				) : (
 					<>
 						<div className="w-[50%] max-md:w-full">{content}</div>
-						<div className="w-[52%] max-md:w-full">{image}</div>
+						<div className="w-[52%] max-md:w-full">
+							<TiltCard>{image}</TiltCard>
+						</div>
 					</>
 				)}
 			</div>
