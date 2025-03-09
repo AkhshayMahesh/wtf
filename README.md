@@ -1,4 +1,5 @@
 # What the Figma Frontend  
+## Team Aladeen
 
 ### Setup
 
