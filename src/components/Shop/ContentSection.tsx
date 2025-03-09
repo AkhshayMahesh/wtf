@@ -13,12 +13,14 @@ export default function ContentSection({
 }: ContentSectionProps) {
 	const content = (
 		<div className="flex flex-col justify-center text-2xl text-black max-md:text-xl">
-			<h2 className="text-4xl font-semibold leading-tight max-md:text-3xl">
-				{title}
-			</h2>
-			<p className="mt-6 leading-9 text-zinc-500 max-md:leading-8">
-				{description}
-			</p>
+			<div className="cursor-pointer transition-all hover:tracking-wide">
+				<h2 className="text-4xl font-semibold leading-tight max-md:text-3xl">
+					{title}
+				</h2>
+				<p className="mt-6 leading-9 text-zinc-500 max-md:leading-8">
+					{description}
+				</p>
+			</div>
 			<div className="mt-6">
 				<button
 					className="rounded-lg bg-neutral-200 px-6 py-3 text-lg font-medium shadow-sm transition-colors hover:bg-neutral-300"

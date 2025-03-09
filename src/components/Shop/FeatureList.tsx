@@ -1,3 +1,4 @@
+import TiltCard from "@components/TiltCard/TiltCard";
 import FeatureCard from "./FeatureCard";
 
 export default function FeatureList() {
@@ -40,8 +41,13 @@ export default function FeatureList() {
 			<div className="mt-12 max-md:mt-8">
 				<div className="grid grid-cols-2 gap-8 max-md:grid-cols-1 max-md:gap-6">
 					{features.map((feature, index) => (
-						<div key={index} className="max-w-[515px]">
-							<FeatureCard {...feature} />
+						<div
+							key={index}
+							className="max-w-[515px] cursor-pointer"
+						>
+							<TiltCard>
+								<FeatureCard {...feature} />
+							</TiltCard>
 						</div>
 					))}
 				</div>

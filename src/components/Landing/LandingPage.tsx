@@ -1,4 +1,3 @@
-"use client";
 import Navigation from "../Navigation";
 import Hero from "./Hero";
 import Features from "./Features";
@@ -12,7 +11,7 @@ function LandingPage() {
 	return (
 		<main className="overflow-hidden bg-white">
 			<Navigation />
-			<div className=" font-inter mt-12 flex w-full flex-col items-start pl-20 max-md:mt-10 max-md:max-w-full max-md:pl-5">
+			<div className="mt-12 flex w-full flex-col items-start pl-20 font-inter max-md:mt-10 max-md:max-w-full max-md:pl-5">
 				<Hero />
 				<Features />
 				<Benefits />

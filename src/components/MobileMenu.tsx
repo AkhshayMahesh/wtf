@@ -8,10 +8,8 @@ interface MobileMenuProps {
 
 export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 	const [currentPage, setCurrentPage] = useState("default");
-
 	useEffect(() => {
 		const path = window.location.pathname;
-		if (path === "/") setCurrentPage("home");
 		const pageMap: { [key: string]: string } = {
 			"/": "home",
 			"/about": "about",
@@ -22,26 +20,28 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 		setCurrentPage(pageMap[path] || "default");
 	}, []);
 
-	useEffect(() => {
-		if (isOpen) {
-			document.body.style.overflow = "hidden";
-		} else {
-			document.body.style.overflow = "unset";
-		}
-		return () => {
-			document.body.style.overflow = "unset";
-		};
-	}, [isOpen]);
-
-	if (!isOpen) return null;
+	// useEffect(() => {
+	// 	if (isOpen) {
+	// 		document.body.style.overflow = "hidden";
+	// 	} else {
+	// 		document.body.style.overflow = "unset";
+	// 	}
+	// 	return () => {
+	// 		document.body.style.overflow = "unset";
+	// 	};
+	// }, [isOpen]);
 
 	return (
 		<div
-			className="fixed inset-0 z-50 bg-black bg-opacity-50"
+			className={`fixed inset-0 z-50 bg-black bg-opacity-50 transition-all ${
+				isOpen ? "opacity-100" : "pointer-events-none opacity-0"
+			}`}
 			onClick={onClose}
 		>
 			<div
-				className="fixed right-0 top-0 h-full w-64 bg-white p-6 shadow-lg"
+				className={`fixed right-0 top-0 h-full w-64 transform bg-white p-6 shadow-lg transition-all duration-300 ${
+					isOpen ? "translate-x-0" : "translate-x-full"
+				}`}
 				onClick={(e) => e.stopPropagation()}
 			>
 				<button
@@ -52,7 +52,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 					×
 				</button>
 				<nav className="mt-12 flex flex-col gap-6">
-					{navMenuItemMap[currentPage].map((item, index) => (
+					{navMenuItemMap[currentPage]?.map((item, index) => (
 						<a
 							key={index}
 							href={item.url}

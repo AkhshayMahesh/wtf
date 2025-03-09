@@ -1,4 +1,3 @@
-"use client";
 import Footer from "@components/Landing/Footer";
 import { AboutHeader } from "./AboutHeader";
 import { ContactForm } from "./ContactForm";
@@ -8,16 +7,11 @@ function About() {
 	return (
 		<main className="w-screen bg-white">
 			<Navigation />
-			<section className="mb-20 h-full w-full px-6 sm:px-24 lg:mt-20 mt-5">
+			<section className="mb-20 mt-5 h-full w-full px-6 sm:px-24 lg:mt-20">
 				<div className="flex h-full w-full flex-col justify-evenly md:flex-row md:gap-5">
 					<div className="w-[50%] max-lg:ml-0 max-lg:w-full">
 						<div className="pb-5 max-lg:mt-10 max-lg:max-w-full">
 							<AboutHeader />
-							<img
-								src="https://cdn.builder.io/api/v1/image/assets/TEMP/c02cfe85607cac9747261a4a95f0b20d72af5ebe74823521d5c3dce05d9fe7f2?placeholderIfAbsent=true&apiKey=9570ebf0bdf745e9829d9755060a264b"
-								alt="About section image"
-								className="aspect-[0.77] w-2/3 rounded-lg object-contain max-lg:mt-10 lg:hidden"
-							/>
 							<h2 className="mt-20 text-3xl font-semibold text-black max-md:mt-10 max-md:max-w-full">
 								Contact me
 							</h2>

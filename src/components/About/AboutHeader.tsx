@@ -6,6 +6,11 @@ export const AboutHeader: React.FC = () => {
 			<h1 className="text-4xl font-bold tracking-tighter sm:text-6xl">
 				About
 			</h1>
+			<img
+				src="https://cdn.builder.io/api/v1/image/assets/TEMP/c02cfe85607cac9747261a4a95f0b20d72af5ebe74823521d5c3dce05d9fe7f2?placeholderIfAbsent=true&apiKey=9570ebf0bdf745e9829d9755060a264b"
+				alt="About section image"
+				className="mt-2 aspect-[0.77] w-2/3 rounded-lg object-contain lg:hidden"
+			/>
 			<p className="mt-4 text-xl text-zinc-500 sm:mt-6 sm:text-2xl">
 				Subheading for description or instructions
 			</p>

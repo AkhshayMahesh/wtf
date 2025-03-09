@@ -1,4 +1,3 @@
-"use client";
 import { SocialLoginOptions } from "./SocialLoginOptions";
 import { useState } from "react";
 
@@ -14,12 +13,13 @@ export function LoginForm({ isLogin }: LoginFormProps) {
 	const [isLoginPage, setIsLoginPage] = useState(isLogin);
 
 	const handleSubmit = (e: React.FormEvent) => {
+		window.location.href = "/";
 		e.preventDefault();
 		// Handle login or signup logic here
 	};
 
 	return (
-		<div className="mr-0 flex h-full flex-col justify-center bg-white px-32 py-64 tracking-normal max-xl:px-[5%] max-xl:py-24 max-lg:max-w-full">
+		<div className="mr-0 flex h-full animate-none flex-col justify-center bg-white px-32 py-64 tracking-normal max-xl:px-[5%] max-xl:py-24 max-lg:max-w-full">
 			<h1 className="self-start text-center text-3xl font-semibold text-gray-900">
 				{isLoginPage ? "Log In" : "Sign Up"}
 			</h1>

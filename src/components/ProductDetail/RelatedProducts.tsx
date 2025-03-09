@@ -48,13 +48,14 @@ export const RelatedProducts: React.FC = () => {
 			</h2>
 			<div className="mb-20 grid grid-cols-[repeat(3,1fr)] gap-8 max-md:grid-cols-[repeat(2,1fr)] max-sm:grid-cols-[1fr] max-sm:gap-4">
 				{relatedProducts.map((product, index) => (
-					<ProductCard
-						key={index}
-						image={product.image}
-						title={product.title}
-						description={product.description}
-						price={product.price}
-					/>
+					<div className="cursor-pointer" key={index}>
+						<ProductCard
+							image={product.image}
+							title={product.title}
+							description={product.description}
+							price={product.price}
+						/>
+					</div>
 				))}
 			</div>
 		</section>

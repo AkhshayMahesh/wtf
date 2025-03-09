@@ -1,4 +1,3 @@
-"use client";
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
 import { navMenuItemMap } from "./NavMenuItems";
@@ -21,10 +20,12 @@ export default function Navigation() {
 	}, []);
 
 	return (
-		<header className="flex w-full flex-wrap items-start justify-between gap-5 overflow-hidden bg-white font-medium max-lg:px-5 max-lg:py-6 lg:px-20 lg:py-8">
-			<h1 className="self-end text-2xl text-black sm:text-3xl">
-				FreshHarvest
-			</h1>
+		<header className="flex w-full flex-wrap items-start justify-between gap-5 overflow-hidden bg-white font-inter font-medium max-lg:px-5 max-lg:py-6 lg:px-20 lg:py-8">
+			<a href="/">
+				<h1 className="self-end text-2xl text-black sm:text-3xl">
+					FreshHarvest
+				</h1>
+			</a>
 
 			{/* Desktop Navigation */}
 			<nav className="hidden items-center gap-10 self-start text-xl text-black md:flex">

@@ -3,11 +3,7 @@ import Navigation from "./Navigation";
 export default function HeroSection() {
 	return (
 		<section className="relative flex min-h-[720px] w-full flex-col overflow-hidden font-inter max-md:min-h-[500px]">
-			<img
-				src="https://cdn.builder.io/api/v1/image/assets/TEMP/4fa7d3e8ea8bafdeb58e6611cbbc61ff7bc5d99b9ece147bac691dcff4eb5eed?placeholderIfAbsent=true&apiKey=9570ebf0bdf745e9829d9755060a264b"
-				alt="Fresh produce background"
-				className="absolute inset-0 size-full object-cover"
-			/>
+			<div className="animate-scroll absolute inset-0 size-full bg-[url('https://cdn.builder.io/api/v1/image/assets/TEMP/4fa7d3e8ea8bafdeb58e6611cbbc61ff7bc5d99b9ece147bac691dcff4eb5eed?placeholderIfAbsent=true&apiKey=9570ebf0bdf745e9829d9755060a264b')] bg-cover"></div>
 			<div className="absolute h-full w-full bg-black bg-opacity-20"></div>
 			<Navigation />
 			<div className="relative flex h-full w-full flex-col px-20 pb-44 pt-14 max-md:px-5 max-md:pb-24 max-md:pt-8">

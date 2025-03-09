@@ -12,7 +12,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
 	author,
 }) => {
 	return (
-		<article className="min-h-[434px] w-[340px] min-w-40 pr-6 md:pr-10 lg:min-w-[400px] lg:pr-0">
+		<article className="w-full pr-6 transition-transform hover:scale-105 hover:cursor-pointer md:pr-10 lg:pr-0">
 			<img
 				src={image}
 				alt={title}

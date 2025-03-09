@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import { FormInput } from "./FormInput";
 import { FormTextArea } from "./FormTextArea";

@@ -8,7 +8,7 @@ export default function Benefits() {
 							Section heading
 						</h2>
 						<div className="mt-8 space-y-8 sm:mt-12 sm:space-y-12">
-							<article className="flex w-full flex-col justify-center">
+							<article className="flex w-full cursor-pointer flex-col justify-center transition-all hover:tracking-wide">
 								<h3 className="font-medium text-black">
 									Premium Quality
 								</h3>
@@ -17,7 +17,7 @@ export default function Benefits() {
 									farm-to-table freshness
 								</p>
 							</article>
-							<article className="flex w-full flex-col justify-center">
+							<article className="flex w-full cursor-pointer flex-col justify-center transition-all hover:tracking-wide">
 								<h3 className="font-medium text-black">
 									Sustainably Sourced
 								</h3>
@@ -26,7 +26,7 @@ export default function Benefits() {
 									practices for a healthier planet.
 								</p>
 							</article>
-							<article className="flex w-full flex-col justify-center">
+							<article className="flex w-full cursor-pointer flex-col justify-center transition-all hover:tracking-wide">
 								<h3 className="font-medium text-black">
 									Fast & Reliable Delivery
 								</h3>
