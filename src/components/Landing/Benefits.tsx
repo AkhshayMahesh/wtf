@@ -1,3 +1,4 @@
+import benefits from "../../assets/benefits.png";
 export default function Benefits() {
 	return (
 		<section className="mt-20 w-full px-5 sm:mt-44 sm:px-1">
@@ -56,7 +57,7 @@ export default function Benefits() {
 				</div>
 				<div className="w-full lg:w-[58%]">
 					<img
-						src="https://cdn.builder.io/api/v1/image/assets/TEMP/a4acb102a624aa1f8887076a1e7ca2d95c5c4d2146d167761f107960a096a679?placeholderIfAbsent=true&apiKey=9570ebf0bdf745e9829d9755060a264b"
+						src={benefits}
 						alt="Benefits illustration"
 						className="aspect-square w-full rounded-lg object-cover"
 					/>

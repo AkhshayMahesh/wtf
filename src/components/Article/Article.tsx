@@ -3,6 +3,12 @@ import { ArticleHeader } from "./ArticleHeader";
 import { ArticleContent } from "./ArticleContent";
 import { RelatedArticles } from "./RelatedArticle";
 import Footer from "@components/Landing/Footer";
+import fiveBenefits from "../../assets/5benefits.png";
+import storeFruits from "../../assets/storeFruits.png";
+import superFood from "../../assets/superfood.png";
+import mainImageArticle from "../../assets/mainImageArticle.png";
+import additional1 from "../../assets/additional1.png";
+import additional2 from "../../assets/additional2.png";
 
 const Article = () => {
 	const articleContent = [
@@ -15,17 +21,17 @@ const Article = () => {
 
 	const relatedArticles = [
 		{
-			image: "https://cdn.builder.io/api/v1/image/assets/TEMP/4d1ce415db32ee91ec22e2b34f32999013cf0022e2fbc7999bd41f7f4da2dd0f?placeholderIfAbsent=true",
+			image: fiveBenefits,
 			title: "5 Benefits of Organic Food",
 			author: "Author",
 		},
 		{
-			image: "https://cdn.builder.io/api/v1/image/assets/TEMP/7c82b42e8a00da4f09aeb800a7887e701db3aecf1113a8eef35250d3fd3627a8?placeholderIfAbsent=true",
+			image: storeFruits,
 			title: "How to Store Fruits Properly",
 			author: "Author",
 		},
 		{
-			image: "https://cdn.builder.io/api/v1/image/assets/TEMP/f0bae1a8de90101b7185a135c4d6589419847980612ae26bc1333435d000248d?placeholderIfAbsent=true",
+			image: superFood,
 			title: "Best Superfoods for Your Diet",
 			author: "Author",
 		},
@@ -34,18 +40,15 @@ const Article = () => {
 	return (
 		<div className="overflow-hidden bg-white">
 			<Navigation />
-			<main className="mt-20 flex w-full flex-col px-20 max-md:mt-10 max-md:max-w-full max-md:px-5 mb-[20vh]">
+			<main className="mb-[20vh] mt-20 flex w-full flex-col px-20 max-md:mt-10 max-md:max-w-full max-md:px-5">
 				<ArticleHeader
 					title="The Secret to Eating Healthy & Fresh"
 					subtitle="Learn how organic food benefits your health and the environment."
 				/>
 				<ArticleContent
-					mainImage="https://cdn.builder.io/api/v1/image/assets/TEMP/7ef4668f74e1510e428bc0c88ac3fd8fbb9572cb6ce52ae12272ab0def5f05a5?placeholderIfAbsent=true"
+					mainImage={mainImageArticle}
 					content={articleContent}
-					additionalImages={[
-						"https://cdn.builder.io/api/v1/image/assets/TEMP/5f481bea44b42d18c039ecd3104085634dd7a3a1594523060b5832659bb1aec0?placeholderIfAbsent=true",
-						"https://cdn.builder.io/api/v1/image/assets/TEMP/3274c6e4b4cc572e28628b6e1995c9b5132ef6f0914b1d98183d25e82fc50248?placeholderIfAbsent=true",
-					]}
+					additionalImages={[additional1, additional2]}
 				/>
 				<RelatedArticles articles={relatedArticles} />
 			</main>

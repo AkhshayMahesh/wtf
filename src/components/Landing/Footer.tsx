@@ -1,3 +1,8 @@
+import youtube from "../../assets/youtube.svg";
+import facebook from "../../assets/facebook.svg";
+import instagram from "../../assets/instagram.svg";
+import linkedin from "../../assets/linkedin.svg";
+
 export default function Footer() {
 	return (
 		<footer className="w-full bg-white px-5 pb-12 sm:px-20">
@@ -9,22 +14,22 @@ export default function Footer() {
 					</a>
 					<div className="flex gap-4 max-md:mt-5 lg:mt-6">
 						<img
-							src="https://cdn.builder.io/api/v1/image/assets/TEMP/199c9a3c64fa87237dabe74b1aff1fe617935141f37a07ba364b7012e90e628c?placeholderIfAbsent=true&apiKey=9570ebf0bdf745e9829d9755060a264b"
+							src={facebook}
 							alt="Social icon"
 							className="h-10 w-10 cursor-pointer rounded hover:opacity-80"
 						/>
 						<img
-							src="https://cdn.builder.io/api/v1/image/assets/TEMP/b1bac3668b19309ab1c82835d154f9962b24bad9c262723d53374e3173c3e762?placeholderIfAbsent=true&apiKey=9570ebf0bdf745e9829d9755060a264b"
+							src={linkedin}
 							alt="Social icon"
 							className="h-10 w-10 cursor-pointer rounded hover:opacity-80"
 						/>
 						<img
-							src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9c8d64becb556072cf4288b2dadd32d18a3ce8e19d5cc15f298f66d1125313b?placeholderIfAbsent=true&apiKey=9570ebf0bdf745e9829d9755060a264b"
+							src={youtube}
 							alt="Social icon"
 							className="h-10 w-10 cursor-pointer rounded hover:opacity-80"
 						/>
 						<img
-							src="https://cdn.builder.io/api/v1/image/assets/TEMP/0828515f09127d365461d17e1036e88788811bd5c0258116139d171a870fbe56?placeholderIfAbsent=true&apiKey=9570ebf0bdf745e9829d9755060a264b"
+							src={instagram}
 							alt="Social icon"
 							className="h-10 w-10 cursor-pointer rounded hover:opacity-80"
 						/>

@@ -2,6 +2,7 @@ import Footer from "@components/Landing/Footer";
 import { AboutHeader } from "./AboutHeader";
 import { ContactForm } from "./ContactForm";
 import Navigation from "@components/Navigation";
+import aboutImage from "../../assets/about.png";
 
 function About() {
 	return (
@@ -20,7 +21,7 @@ function About() {
 					</div>
 					<div className="ml-5 hidden h-4/5 w-[50%] items-start justify-end max-md:ml-0 max-md:w-full lg:flex lg:flex-row">
 						<img
-							src="https://cdn.builder.io/api/v1/image/assets/TEMP/c02cfe85607cac9747261a4a95f0b20d72af5ebe74823521d5c3dce05d9fe7f2?placeholderIfAbsent=true&apiKey=9570ebf0bdf745e9829d9755060a264b"
+							src={aboutImage}
 							alt="About section image"
 							className="aspect-[0.77] max-h-[80vh] rounded-lg object-contain"
 						/>

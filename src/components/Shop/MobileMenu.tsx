@@ -39,8 +39,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 			onClick={onClose}
 		>
 			<div
-				className={`fixed left-0 top-0 h-full w-64 transform bg-white p-6 shadow-lg transition-all duration-300 ${
-					isOpen ? "translate-x-0" : "-translate-x-full"
+				className={`fixed right-0 top-0 h-full w-64 transform bg-white p-6 shadow-lg transition-all duration-300 ${
+					isOpen ? "translate-x-0" : "translate-x-full"
 				}`}
 				onClick={(e) => e.stopPropagation()}
 			>

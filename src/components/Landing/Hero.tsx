@@ -1,3 +1,5 @@
+import freshOrganic from "../../assets/freshOrganic.png";
+
 export default function Hero() {
 	return (
 		<section className="mx-auto w-full px-4 font-inter max-md:max-md:pr-5 sm:px-6 lg:pr-20">
@@ -19,7 +21,7 @@ export default function Hero() {
 				Article
 			</button>
 			<img
-				src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b9764922aa4ee8af2886fa74e772618b3cca452360dc160f7e4bb1c0f40ede0?placeholderIfAbsent=true&apiKey=9570ebf0bdf745e9829d9755060a264b"
+				src={freshOrganic}
 				alt="Fresh organic produce"
 				className="featureImage mt-6 aspect-video w-full rounded-lg object-cover"
 			/>
